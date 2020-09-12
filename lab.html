@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lab items list</title>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script>
+    // DOMContentLoaded wait until all dom is loaded, check the docs in below link
+    // https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
+    document.addEventListener("DOMContentLoaded", (_) => {
+      let item_name = document.querySelector("#item-name");
+      let item_value = document.querySelector("#item-value");
+      // use here what you have in utils.js
+    });
+  </script>
+</head>
+<body >
+  <div id="container" >
+    item: <input type="text" id="item-name">
+    value: <input type="number" id="item-value" >
+    <button id="add-item"> add</button>
+  </div>
+  <div id="total"></div>
+  <ul class="items" id="table">
+  </ul>
+</body>
+<script src="./utils.js"></script>
+</html>
